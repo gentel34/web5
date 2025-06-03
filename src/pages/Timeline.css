@@ -1,0 +1,44 @@
+.timeline-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: transparent;
+}
+
+.timeline-page h1 {
+  color: #ffb800;
+  text-align: center;
+  font-size: 2.3rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  margin-bottom: 2rem;
+  text-shadow: 0 2px 16px #181c2f;
+}
+
+.timeline-container {
+  margin-top: 2rem;
+  overflow-x: auto;
+  padding: 1rem 0;
+}
+
+.timeline-scroll {
+  display: flex;
+  gap: 1.5rem;
+  padding-bottom: 1rem;
+}
+
+.timeline-scroll > * {
+  background: #232946;
+  border-radius: 16px;
+  box-shadow: 0 4px 16px #ffb80022;
+  padding: 1.2rem 1rem;
+  min-width: 320px;
+  max-width: 340px;
+  border: 2px solid #232946;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.timeline-scroll > *:hover {
+  border: 2px solid #ffb800;
+  box-shadow: 0 8px 32px #ffb80044;
+}

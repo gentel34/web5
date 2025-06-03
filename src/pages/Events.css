@@ -1,0 +1,184 @@
+.events-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: transparent;
+  min-height: 100vh;
+}
+
+.events-page h1 {
+  text-align: center;
+  color: #ffb800;
+  margin-bottom: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 2px;
+  font-size: 2.5rem;
+  text-shadow: 0 2px 16px #181c2f;
+}
+
+.events-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+  margin-top: 2.5rem;
+}
+
+.period-filter {
+  display: flex;
+  gap: 1.2rem;
+  margin-bottom: 2.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.period-filter button {
+  padding: 0.8rem 2rem;
+  border: none;
+  background: #232946;
+  border-radius: 30px;
+  cursor: pointer;
+  font-weight: 600;
+  color: #ffb800;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 12px rgba(255, 184, 0, 0.08);
+  transition: background 0.3s, color 0.2s;
+}
+
+.period-filter button:hover,
+.period-filter button.active {
+  background: linear-gradient(90deg, #ff595a 0%, #ffb800 100%);
+  color: #181c2f;
+}
+
+.back-to-home {
+  text-align: center;
+  margin-top: 3rem;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 1rem 2.2rem;
+  background: linear-gradient(90deg, #ff595a 0%, #ffb800 100%);
+  color: #181c2f;
+  text-decoration: none;
+  border-radius: 30px;
+  font-weight: 700;
+  font-size: 1.1rem;
+  box-shadow: 0 2px 12px rgba(255, 184, 0, 0.12);
+  transition: background 0.3s, color 0.2s;
+}
+
+.back-button:hover {
+  background: linear-gradient(90deg, #ffb800 0%, #ff595a 100%);
+  color: #fff;
+}
+
+/* Card styles (for EventCard) */
+.event-card {
+  background: #232946;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(255, 184, 0, 0.08), 0 1.5px 8px #181c2f;
+  padding: 1.5rem 1rem 1rem 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 2px solid #232946;
+  transition: box-shadow 0.25s, transform 0.2s, border 0.2s;
+  position: relative;
+  overflow: hidden;
+}
+
+.event-card:hover {
+  box-shadow: 0 12px 36px #ffb80044, 0 2px 12px #ff595a44;
+  transform: translateY(-6px) scale(1.03);
+  border: 2px solid #ffb800;
+}
+
+.event-card img {
+  width: 100%;
+  max-width: 320px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin-bottom: 1.2rem;
+  background: #181c2f;
+  box-shadow: 0 2px 12px #181c2f55;
+}
+
+.event-card-title {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: #ffb800;
+  margin-bottom: 0.5rem;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+.event-card-period {
+  background: #ff595a;
+  color: #fff;
+  border-radius: 8px;
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+}
+
+.event-card-years {
+  color: #ffb800;
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.event-card-desc {
+  color: #f4f4f6;
+  font-size: 1.05rem;
+  margin-bottom: 1.2rem;
+  text-align: center;
+}
+
+.event-card-link {
+  margin-top: auto;
+  background: linear-gradient(90deg, #ff595a 0%, #ffb800 100%);
+  color: #181c2f;
+  padding: 0.6rem 1.5rem;
+  border-radius: 30px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1rem;
+  transition: background 0.2s, color 0.2s;
+  box-shadow: 0 2px 8px #ffb80033;
+}
+
+.event-card-link:hover {
+  background: linear-gradient(90deg, #ffb800 0%, #ff595a 100%);
+  color: #fff;
+}
+
+/* Responsive styles */
+@media (max-width: 1100px) {
+  .events-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .events-grid {
+    grid-template-columns: 1fr;
+  }
+  .event-card img {
+    max-width: 100%;
+    height: 160px;
+  }
+}
+
+@media (max-width: 500px) {
+  .events-page {
+    padding: 0.5rem;
+  }
+  .event-card {
+    padding: 1rem 0.5rem 0.5rem 0.5rem;
+  }
+}

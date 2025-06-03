@@ -1,0 +1,46 @@
+.comments-page {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background: transparent;
+}
+
+.comments-page h1 {
+  color: #ffb800;
+  text-align: center;
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+}
+
+.comments-list {
+  margin-bottom: 2rem;
+}
+
+.comment {
+  background: #232946;
+  padding: 1.2rem 1rem;
+  margin-bottom: 1.2rem;
+  border-radius: 14px;
+  box-shadow: 0 2px 12px #ffb80022;
+  border: 2px solid #232946;
+  transition: box-shadow 0.2s, border 0.2s;
+}
+
+.comment:hover {
+  border: 2px solid #ffb800;
+  box-shadow: 0 6px 24px #ffb80044;
+}
+
+.comment h3 {
+  margin-top: 0;
+  color: #ffb800;
+  font-weight: 600;
+  font-size: 1.1rem;
+}
+
+.comment small {
+  color: #ffb800bb;
+  font-size: 0.95rem;
+}

@@ -1,0 +1,82 @@
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: linear-gradient(135deg, #181c2f 0%, #232946 100%);
+  color: #f9fafb; /* світліший текст */
+  font-family: 'Segoe UI', 'Roboto', 'Arial', sans-serif;
+  font-size: 18px;
+  line-height: 1.7;
+  letter-spacing: 0.02em;
+}
+
+main {
+  flex: 1;
+  padding: 2.5rem 1rem;
+  background: transparent;
+}
+
+a {
+  text-decoration: none;
+  color: #ffe066; /* яскраво-жовтий для кращого контрасту */
+  transition: color 0.2s;
+  font-weight: 500;
+  text-shadow: 0 1px 2px #181c2f99;
+}
+
+a:hover {
+  color: #ff595a;
+}
+
+button {
+  cursor: pointer;
+  background: linear-gradient(90deg, #ffe066 0%, #ff595a 100%);
+  color: #232946; /* темний текст на яскравому фоні */
+  border: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 30px;
+  font-weight: 600;
+  font-size: 1.1rem;
+  letter-spacing: 0.03em;
+  box-shadow: 0 4px 16px rgba(255, 89, 90, 0.08);
+  transition: background 0.3s, color 0.2s, transform 0.15s;
+  text-shadow: none;
+}
+
+button:hover {
+  background: linear-gradient(90deg, #ff595a 0%, #ffe066 100%);
+  color: #232946;
+  transform: translateY(-2px) scale(1.04);
+}
+
+h1, h2, h3 {
+  color: #ffe066;
+  letter-spacing: 1.5px;
+  font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
+  text-shadow: 0 2px 8px #181c2f;
+}
+
+/* Додатково для плавності */
+* {
+  box-sizing: border-box;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s;
+}
+
+/* Додатково для читабельності тексту */
+body, .app, main {
+  color: #f9fafb;
+  text-shadow: 0 1px 2px #181c2f88;
+}
+
+p, li, .event-card-desc, .feature-card p, .hero-description, .about-content, .event-content {
+  font-size: 1.08em;
+  line-height: 1.8;
+  color: #f9fafb;
+  text-shadow: 0 1px 2px #181c2f55;
+}
+
+@media (max-width: 700px) {
+  .app {
+    font-size: 16px;
+  }
+}
